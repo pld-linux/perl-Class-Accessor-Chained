@@ -6,6 +6,7 @@
 %define	pdir	Class
 %define	pnam	Accessor-Chained
 Summary:	Class::Accessor::Chained - make chained accessors
+Summary(pl):	Class::Accessor::Chained - tworzenie ³añcuchowych metod accessor
 Name:		perl-Class-Accessor-Chained
 Version:	0.01
 Release:	1
@@ -17,7 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Class::Accessor)
+BuildRequires:	perl-Class-Accessor
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,8 +31,13 @@ no arguments.
 This module subclasses Class::Accessor in order to provide the same
 mk_accessors interface.
 
-# %description -l pl
-# TODO
+%description -l pl
+£añcuchowa metoda accessor to taka, która zawsze zwraca obiekt przy
+wywo³aniu z parametrami (do ustawienia), a warto¶æ pola przy wywo³aniu
+bez parametrów.
+
+Ten modu³ jest podklas± Class::Accessor dla zapewnienia tego samego
+interfejsu mk_accessors.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
