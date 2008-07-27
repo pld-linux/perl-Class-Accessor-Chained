@@ -9,7 +9,7 @@ Summary:	Class::Accessor::Chained - make chained accessors
 Summary(pl.UTF-8):	Class::Accessor::Chained - tworzenie łańcuchowych metod accessor
 Name:		perl-Class-Accessor-Chained
 Version:	0.01
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
