@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Class
 %define	pnam	Accessor-Chained
+%include	/usr/lib/rpm/macros.perl
 Summary:	Class::Accessor::Chained - make chained accessors
 Summary(pl.UTF-8):	Class::Accessor::Chained - tworzenie łańcuchowych metod accessor
 Name:		perl-Class-Accessor-Chained
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9825a1f30a70e55e61bb5660b2bd7365
+URL:		http://search.cpan.org/dist/Class-Accessor-Chained/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
