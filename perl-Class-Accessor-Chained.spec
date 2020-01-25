@@ -4,7 +4,6 @@
 
 %define	pdir	Class
 %define	pnam	Accessor-Chained
-%include	/usr/lib/rpm/macros.perl
 Summary:	Class::Accessor::Chained - make chained accessors
 Summary(pl.UTF-8):	Class::Accessor::Chained - tworzenie łańcuchowych metod accessor
 Name:		perl-Class-Accessor-Chained
